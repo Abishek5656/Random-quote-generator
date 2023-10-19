@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  border: 1px solid red;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.line {
+  width: 6.5px;
+  height: 250px;
+  background-color: #f7df94;
+  margin-left: 10rem;
+  /* position: fixed;
+  left: 7rem; */
+}
+
+.content {
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.content p {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.btn {
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  outline: none;
+  border: none;
+  width: 500px;
+  height: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+}
+
+.btn-content {
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.random-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-right: 2rem;
+}
+
+.random-btn button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h2 {
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-top: 4rem;
+  }
+
+  .random-btn {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .line {
+    margin: 0;
+  }
+
+  .content p {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .line {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .line {
+    margin-left: 10rem;
+  }
+}
